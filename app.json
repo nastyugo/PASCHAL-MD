@@ -1,0 +1,54 @@
+{
+  "name": "PASCHAL MD",
+  "description": "This is a simple whatsapp bot built with nodejs to make your WhatsApp enjoyable",
+  "keywords": [
+    "bot",
+    "whatsapp",
+    "PASCHAL MD",
+    "whatsapp-stickers",
+    "anime",
+    "whatsapp-bot",
+    "PASCHAL MD",
+    "whatsapp",
+    "baileys",
+    "baileys-md",
+    "md-bot"
+  ],
+  "website": "https://github.com/nastyugo/PASCHAL-MD#readme",
+  "repository": "https://github.com/nastyugo/PASCHAL-MD.git",
+  "logo": "https://files.catbox.moe/bkuj17.jpg",
+  "success_url": "/",
+  "env": {
+    "SESSION": {
+      "description": "Add your session id here",
+      "required": true
+    },
+    "OWNER_NUMBER": {
+      "description": "Bot owner number",
+      "value": "2347066575685",
+      "required": true
+    },
+    "CHANNEL_LINK": {
+      "description": "Bot channel link",
+      "value": "https://whatsapp.com/channel/0029VbCBZUn2Jl8BuFvMwr0G",
+      "required": false
+    },
+    "DEVICE_MODE": {
+      "description": "Device mode: iPhone (plain text) or Android (full features with buttons)",
+      "value": "Android",
+      "required": true
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql:essential-0",
+      "as": "DATABASE"
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ],
+  "stack": "heroku-24"
+}
